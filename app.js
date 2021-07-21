@@ -42,15 +42,10 @@ const FindFormElement = document.getElementById('form');
 const FindEmailElement = document.getElementById('email');
 const FindTextareaElement = document.getElementById('textarea');
 
-
-
 FindFormElement.addEventListener('submit', e => {
     e.preventDefault();
     let validateInputs = new FormController();
     validateInputs.inputsValidator(FindEmailElement, FindTextareaElement);
 });
 
-// console.log(FindFormElement);
-// console.log(FindEmailElement);
-// console.log(FindTextareaElement);
 

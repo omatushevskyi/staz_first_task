@@ -1,21 +1,6 @@
 class FormController {
     constructor() {
-        // this.form = form;
-        // this.email = email;
-        // this.textarea = textarea;
     }
-
-    // getForm() {
-    //     document.getElementById('form');
-    // }
-    //
-    // getEmail() {
-    //    document.getElementById('email');
-    // }
-    //
-    // getTextarea() {
-    //     document.getElementById('textarea');
-    // }
 
     inputsValidator(eValue, tValue) {
         const emailValue = eValue.value.trim();
