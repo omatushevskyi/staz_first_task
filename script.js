@@ -9,6 +9,8 @@ const testSettings = {
     ]
 }
 
+console.log(testSettings);
+
 function generateFormOnPattern(testSettings) {
     let divContainer = document.createElement('div');
     divContainer.setAttribute('class', 'container');
@@ -75,10 +77,10 @@ function generateFormOnPattern(testSettings) {
     const emailElement = document.getElementById('email');
     const textareaElement = document.getElementById('textarea');
 
-formElement.addEventListener('submit', e => {
-    e.preventDefault();
-    checkInputs();
-});
+    formElement.addEventListener('submit', e => {
+        e.preventDefault();
+        checkInputs();
+    });
 
     function checkInputs() {
         const emailValue = emailElement.value.trim();
@@ -86,7 +88,7 @@ formElement.addEventListener('submit', e => {
 
         if (emailValue === '') {
             setErrorFor(emailElement, 'To pole nie może być puste');
-        } else if(!isEmail(emailValue)) {
+        } else if (!isEmail(emailValue)) {
             setErrorFor(emailElement, 'Email jest nie poprawny');
         } else {
             setSuccessFor(emailElement);
